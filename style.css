@@ -1,0 +1,121 @@
+/* Inaweka rangi ya asili ya ukurasa mzima */
+body {
+    background-image:url(images/bulding.jpg) ;
+    background-size: cover;      /* MAKE THE PICTURE TO FILL THE WHOLE SCREEN */
+    background-attachment: fixed; /* THE IMAGE DOESN'T MOVE WHEN SCROLL THE TEXT */
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    /* THIS PUTS 90% WHITE ON THE TOP OF THE IMAGE SO THAT THE TEXT IS READABLE */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/AI-image.jpg);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Header AND FOOTER SHOULD BE IN THE MIDDLE OF TE WRAPPER */
+header, footer {
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* IT CREATES A PROFILE (bio) */
+.bio {
+    color: blue;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid blue;
+    white-space: pre-wrap;
+}
+
+/* It makes your image stay centered.*/
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; /* Makes the image circular.*/
+    border: 3px solid skyblue;
+}
+
+/* It's a nice table. */
+table {
+    width: 100%;
+    background-color: rgba(216, 100, 43, 0.9); /* 0.9 makes the color a little darker*/
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid white;
+}
+
+/* It is interesting form. */
+.container {
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+}
+.social-icons img {
+    width: 30px;      /* This is where you reduce the size.*/
+    height: 30px;     /* Make sure these numbers match so the image doesn't lose its shape.*/
+    margin: 0 8px;    /* Space between images and pictures */
+    transition: transform 0.3s;
+}
+
+/*Optional: If you want the images to move slightly when you touch them*/
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.profile-section {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;    /* Center them horizontally */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;      /* Prevents your photo from looking stretched */
+    border-radius: 50%;     /* Makes the image a perfect circle */
+    border: 5px solid skyblue; 
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1); /* Adds a soft professional shadow */
+    margin-bottom: 20px;
+}
+
+.bio {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-wrap;  /* Fixes the text so it doesn't run off the screen */
+    max-width: 600px;
+    line-height: 1.6;
+}
+.modern-quote {
+    position: relative;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    margin: 40px 0;
+    /*Soft shadow*/
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-left: 8px solid skyblue;
+    overflow: hidden;
+}
